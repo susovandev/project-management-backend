@@ -6,6 +6,8 @@ const _config = {
     PORT: Number(process.env.PORT) || 4000,
     REQUEST_LIMIT: String(process.env.REQUEST_LIMIT).trim(),
     CORS_ORIGIN: process.env.CORS_ORIGIN,
+    MONGODB_URI: process.env.MONGODB_URI.trim(),
+    MONGODB_DB_NAME: process.env.MONGODB_DB_NAME.trim(),
 };
 
 const config = Object.freeze(_config);
