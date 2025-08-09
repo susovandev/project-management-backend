@@ -1,0 +1,19 @@
+{
+    "name": "backend-project",
+    "version": "1.0.0",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "dev": "npm run format && nodemon main.js",
+        "start": "npm run format && node main.js",
+        "format": "prettier --write .",
+        "check-format": "prettier --check ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "prettier": "^3.6.2"
+    }
+}

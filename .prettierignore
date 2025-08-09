@@ -1,0 +1,45 @@
+# Ignore node_modules and build outputs
+node_modules
+dist
+build
+coverage
+
+# Ignore environment files
+.env
+.env.*  
+
+# Ignore lock files if you don’t want Prettier to format them
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore compiled JavaScript (from TypeScript)
+*.tsbuildinfo
+
+# Ignore logs
+*.log
+
+# Ignore cache and temp files
+.cache
+.tmp
+.temp
+
+# Ignore public/static assets
+public/*
+static/*
+
+# Ignore Docker related files
+Dockerfile
+docker-compose.yml
+
+# Ignore git-related files
+.git
+.gitignore
+
+# Ignore any other config files not needed
+.prettierignore
+.eslintcache
+
+# Ignore markdown or documentation if not needed
+docs/*
+*.md
