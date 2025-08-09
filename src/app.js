@@ -1,5 +1,5 @@
-const app = function () {
-    console.log('Hey i am inside the app.js file');
-};
+import express from 'express';
 
-export default app;
+const app = express();
+
+export { app };
