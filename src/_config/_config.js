@@ -3,7 +3,9 @@ dotenv.config({ path: './.env', override: true, quiet: true });
 
 const _config = {
     NODE_ENV: process.env.NODE_ENV.trim() || 'development',
-    PORT: process.env.PORT || 4000,
+    PORT: Number(process.env.PORT) || 4000,
+    REQUEST_LIMIT: String(process.env.REQUEST_LIMIT).trim(),
+    CORS_ORIGIN: process.env.CORS_ORIGIN,
 };
 
 const config = Object.freeze(_config);
