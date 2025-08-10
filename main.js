@@ -6,7 +6,7 @@ connectDB()
     .then(() => {
         app.listen(config.PORT, () => {
             console.log(
-                `Server is running on http://locakhost:${config.PORT} in ${config.NODE_ENV} mode`,
+                `Server is running on http://localhost:${config.SERVER.PORT} in ${config.SERVER.NODE_ENV} mode`,
             );
         });
     })

@@ -8,7 +8,14 @@ const app = express();
  * @middlewares
  */
 app.use(corsConfig);
-app.use(express.json({ limit: config.REQUEST_LIMIT, strict: true }));
-app.use(express.urlencoded({ extended: true, limit: config.REQUEST_LIMIT }));
+app.use(express.json({ limit: config.SERVER.REQUEST_LIMIT, strict: true }));
+app.use(
+    express.urlencoded({ extended: true, limit: config.SERVER.REQUEST_LIMIT }),
+);
 
+/**
+ * @import routes
+ */
+import healthCheckRoutes from './routes/healthCheck.routes.js';
+app.use('/api/v1/health-check', healthCheckRoutes);
 export { app };
